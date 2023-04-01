@@ -5,8 +5,7 @@ This website is live at [https://15418-s23.github.io/final-project-website/PROPO
 ## TITLE: Parallel Collision Detection and Minimum Distance Query Algorithm 
 - Author: Bo Ying, Su and Yufei Shi
 ## SUMMARY: 
-- In this project, we will implement a parallel collision detection algorithm and a parallel minimum distance query algorithm. The collision detection algorithm will be used to detect whether two objects collide or not. The minimum distance query algorithm will be used to find the minimum distance between two objects. We will implement these two algorithms on the GPU with the CUDA library and compare the performance with the naive CPU implementation.
-
+- In this project, we will implement a parallel collision detection algorithm and a parallel minimum distance query algorithm. The collision detection algorithm will be used to detect whether two objects collide or not. The minimum distance query algorithm will be used to find the minimum distance between two objects. We will implement these two algorithms on the GPU with the CUDA library and compare the performance with the naive CPU implementation. We will demonstate the advantages of the parallel algorithms by comparing the performance to the naive CPU implementation with complex object geometries.
 
 ## BACKGROUND:
 
