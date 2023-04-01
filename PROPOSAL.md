@@ -2,9 +2,12 @@ This website is live at [https://15418-s23.github.io/final-project-website/PROPO
 
 # 15618-sp23 Final Project Proposal
 
-## TITLE: Parallel Collision Detection and Minimum Distance Query Algorithm 
+## TITLE: Parallel Collision Detection and Minimum Distance Query Algorithm
+
 - Author: Bo Ying, Su (boyings) and Yufei Shi (yshi2)
-## SUMMARY: 
+
+## SUMMARY:
+
 - In this project, we will implement a parallel collision detection algorithm and a parallel minimum distance query algorithm. The collision detection algorithm will be used to detect whether two objects collide or not. The minimum distance query algorithm will be used to find the minimum distance between two objects. We will implement these two algorithms on the GPU with the CUDA library and compare the performance with the naive CPU implementation. We will demonstate the advantages of the parallel algorithms by comparing the performance to the naive CPU implementation with complex object geometries.
 
 ## SUMMARY
@@ -39,10 +42,16 @@ The anticipated improvement in efficiency and accuracy could have significant im
 - A successfull project will have the following deliverables:
   - A parallel collision detection algorithm that can detect whether two objects collide or not.
   - A parallel minimum distance query algorithm that can find the minimum distance between any two objects in the scene.
-  - A visualization of the collision detection and minimum distance query by displaying the distances between objects and the collision points in the scene.
   - A performance comparison (speedup) between the parallel algorithms and the naive CPU implementation.
-  - (Extra Goal) Collision detection and minimum distance computation are used extensively in Safety Set Algorithm (SSA) in robotic arms. Currently, SSA is implemented on the CPU and simplfies the geometry of the objects and robot arm to a set of capsules, which is far from the real geometry of the objects. We hope to implement the SSA on the GPU and use the parallel collision detection and minimum distance query algorithms to compute the safety set of the robot arm.
-  - (Extra Goal) Demonstrate real-time SSA with GPU acceleration on collision detection and minimum distance query on industrial robots. This requires the entire pipeline to run under 5ms (200Hz) due to the real-time requirements of the robot controller. This is achievable with the current capsule-based SSA implementation on the CPU.
+  - A demo: we plan to visualize the collision detection and minimum distance query algorithms by displaying the distances between objects and the collision points in the scene.
+    Both a traditional serial implementation and our parallel implementation will be demonstrated, and there will be different sets of objects.
+    That way the audience can see the difference in performance between the two approaches (ideally there should be a human observable difference between these approaches in terms of the runtime of each implementation).
+  - (Extra Goal) Collision detection and minimum distance computation are used extensively in Safety Set Algorithm (SSA) in robotic arms.
+    Currently, SSA is implemented on the CPU and simplfies the geometry of the objects and robot arm to a set of capsules, which is far from the real geometry of the objects.
+    We hope to implement the SSA on the GPU and use the parallel collision detection and minimum distance query algorithms to compute the safety set of the robot arm.
+  - (Extra Goal) Demonstrate real-time SSA with GPU acceleration on collision detection and minimum distance query on industrial robots.
+    This requires the entire pipeline to run under 5ms (200Hz) due to the real-time requirements of the robot controller.
+    This is achievable with the current capsule-based SSA implementation on the CPU.
 
 ## PLATFORM CHOICE
 
@@ -50,7 +59,7 @@ The anticipated improvement in efficiency and accuracy could have significant im
 
 ## SCHEDULE
 
-- These are the milestones we plan to achieve:
+- These are the milestones we plan to achieve (in order of the week we plan to achieve them):
   - Implement sequential collision detection and minimum distance query algorithm on CPU.
   - Implement naive parallel collision detection and minimum distance query algorithm on GPU that parallelizes over mesh triangles.
   - Explore optimization techniques to improve the performance of the parallel algorithms. For example, we might be able to parallelize over fixed grid cells in the space. Or, we can think about how to leverage the convexity of the objects to improve the performance.
