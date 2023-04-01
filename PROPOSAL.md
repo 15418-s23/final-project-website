@@ -31,7 +31,7 @@ The anticipated improvement in efficiency and accuracy could have significant im
 
 ## RESOURCES
 
-- We need CUDA-capable gpu with mid-higher end cpu.
+- We need CUDA-capable GPU with mid-higher end CPU.
 - We do not have a starter code for this project. We will start from scratch and implement the algorithms from scratch. It is simple enough though, since we are basically just processing triangle meshes. We will use the CUDA library to implement the algorithms on the GPU.
 
 ## GOALS AND DELIVERABLES
@@ -51,7 +51,8 @@ The anticipated improvement in efficiency and accuracy could have significant im
 ## SCHEDULE
 
 - These are the milestones we plan to achieve:
-  - Implement sequential collision detection and minimum distance query algorithm on CPU.
-  - Implement naive parallel collision detection and minimum distance query algorithm on GPU that parallelizes over mesh triangles.
-  - Explore optimization techniques to improve the performance of the parallel algorithms. For example, we might be able to parallelize over fixed grid cells in the space. Or, we can think about how to leverage the convexity of the objects to improve the performance.
-  - Optimize out algorithm for the robotic arm application. This does not require all-to-all minimum distance query, but only distance query between the robot arm and the objects in the scene.
+  -(~4/7) Implement sequential collision detection and minimum distance query algorithm on CPU.
+  -(~4/14) Implement naive parallel collision detection and minimum distance query algorithm on GPU that parallelizes over mesh triangles.
+  -(~4/21) Explore optimization techniques to improve the performance of the parallel algorithms. For example, we might be able to parallelize over fixed grid cells in the space or bounding volume hierarchies.
+  -(~4/28) Explore optimization techniques that leverages the geometry of the objects to improve the performance. 
+  -(~5/4) Finalize the report and demo. If we still have time, we can try optimizing our algorithm for the robotic arm application. This does not require all-to-all minimum distance query, but only distance query between the robot arm and the objects in the scene.
