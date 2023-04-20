@@ -1,12 +1,14 @@
-This website is live at [https://15418-s23.github.io/final-project-website/PROPOSAL.html](https://15418-s23.github.io/final-project-website/PROPOSAL.html)
-
 # 15618-sp23 Final Project Proposal
 
-## TITLE: Parallel Collision Detection and Minimum Distance Query Algorithm
+## TITLE: Parallel Acceleration of Collision Detection and Minimum Distance Query in 3D Mesh Objects
 
-- Author: Bo Ying, Su (boyings) and Yufei Shi (yshi2)
+### Author: Bo Ying, Su (boyings) and Yufei Shi (yshi2)
 
-## SUMMARY:
+## URL
+
+[https://15418-s23.github.io/final-project-website/PROPOSAL.html](https://15418-s23.github.io/final-project-website/PROPOSAL.html)
+
+## SUMMARY
 
 - In this project, we will implement a parallel collision detection algorithm and a parallel minimum distance query algorithm. The collision detection algorithm will be used to detect whether two objects collide or not. The minimum distance query algorithm will be used to find the minimum distance between two objects. We will implement these two algorithms on the GPU with the CUDA library and compare the performance with the naive CPU implementation. We will demonstate the advantages of the parallel algorithms by comparing the performance to the naive CPU implementation with complex object geometries.
 
@@ -59,17 +61,12 @@ The anticipated improvement in efficiency and accuracy could have significant im
 
 ## SCHEDULE
 
-<<<<<<< HEAD
 - These are the milestones we plan to achieve:
-  -(~4/7) Implement sequential collision detection and minimum distance query algorithm on CPU.
-  -(~4/14) Implement naive parallel collision detection and minimum distance query algorithm on GPU that parallelizes over mesh triangles.
-  -(~4/21) Explore optimization techniques to improve the performance of the parallel algorithms. For example, we might be able to parallelize over fixed grid cells in the space or bounding volume hierarchies.
-  -(~4/28) Explore optimization techniques that leverages the geometry of the objects to improve the performance. 
-  -(~5/4) Finalize the report and demo. If we still have time, we can try optimizing our algorithm for the robotic arm application. This does not require all-to-all minimum distance query, but only distance query between the robot arm and the objects in the scene.
-=======
-- These are the milestones we plan to achieve (in order of the week we plan to achieve them):
-  - Implement sequential collision detection and minimum distance query algorithm on CPU.
-  - Implement naive parallel collision detection and minimum distance query algorithm on GPU that parallelizes over mesh triangles.
-  - Explore optimization techniques to improve the performance of the parallel algorithms. For example, we might be able to parallelize over fixed grid cells in the space. Or, we can think about how to leverage the convexity of the objects to improve the performance.
-  - Optimize out algorithm for the robotic arm application. This does not require all-to-all minimum distance query, but only distance query between the robot arm and the objects in the scene.
->>>>>>> 34554620e772d8c68d7eff377ac2ad24847d79df
+  - (~4/7) Implement sequential collision detection and minimum distance query algorithm on CPU.
+  - (~4/14) Implement naive parallel collision detection and minimum distance query algorithm on GPU that parallelizes over mesh triangles.
+  - (~4/21) Explore optimization techniques to improve the performance of the parallel algorithms.
+    For example, we might be able to parallelize over fixed grid cells in the space or bounding volume hierarchies.
+  - (~4/28) Explore optimization techniques that leverages the geometry of the objects to improve the performance.
+  - (~5/4) Finalize the report and demo.
+    If we still have time, we can try optimizing our algorithm for the robotic arm application.
+    This does not require all-to-all minimum distance query, but only distance query between the robot arm and the objects in the scene.
